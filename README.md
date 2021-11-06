@@ -20,7 +20,7 @@ The back-end for an e-commerce site in order to get, post, update, and delete it
 * [Questions](#questions)
 
 ## Demo
-[Click here](https://drive.google.com/file/d/14z6HRPoWoNxQNTJVMgHnGCEFXSu2Ps8f/view) to watch a demo of the application.
+[Click here](https://drive.google.com/file/d/1DgGCftttAM1jqnO7mGRWQLiXyDGGMVbZ/view) to watch a demo of the application.
 
 ## Installation
 1. Install [Node.js](https://nodejs.org/en/) and [MySQL](https://dev.mysql.com/downloads/mysql) if you haven't already.
@@ -53,6 +53,30 @@ DB_PW= [YOUR MYSQL PASSWORD HERE]
     - To GET, POST, PUT, or DELETE a category by ID: `/api/categories/:id`
     - To GET, POST, PUT, or DELETE a product by ID: `/api/products/:id`
     - To GET, POST, PUT, or DELETE a tag by ID: `/api/tags/:id`
+
+![Insomnia Core Screenshot](./assets/images/insomniasc.PNG)
+
+- JSON format for creating a category:
+```json
+{
+    "category_name": "Glasses"
+}
+```
+- JSON format for creating a product:
+```json
+{
+    "product_name": "Basketball",
+    "price": 200.00,
+    "stock": 3,
+    "tagIds": [1, 2, 3, 4]
+}
+```
+- JSON format for creating a tag:
+```json
+{
+    "tag_name": "purple"
+}
+```
 
 ## CRUD
 This application performs RESTful CRUD operations to interact with the database.
